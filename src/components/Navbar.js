@@ -21,8 +21,8 @@ export default class Navbar extends Component {
         <Link to="/cart" className="ml-auto">
             <ButtonContainer>
                 <span>
-                    <i className="fa fa-cart-plus">
-                        my cart
+                    <i className="fa fa-cart-plus mycart">
+                    &nbsp;cart
                     </i>
                 </span>
             </ButtonContainer>

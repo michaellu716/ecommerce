@@ -27,9 +27,10 @@ export default class Product extends Component {
                     }}
                   >
                     {inCart ? (
-                      <p className="text-capitalize mb-0" disabled>
+                      <Link to="/cart"><p className="text-capitalize mb-0" disabled>
                         in cart
                       </p>
+                      </Link>
                     ) : (
                       <i className="fa fa-cart-plus" />
                     )}
@@ -90,8 +91,7 @@ const ProductWrapper = styled.div`
     color: var(--mainWhite);
     font-size: 1.4rem;
     border-radius: 0.5rem 0 0 0;
-    transform: translate(100%, 100%);
-    transition: all 0.3s ease-in-out;
+    
   }
   .img-container:hover .cart-btn {
     transform: translate(0, 0);
